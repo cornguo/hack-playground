@@ -22,10 +22,14 @@ class Hello {
 
 }
 
-$helloThing = new Hello();
+function test() {
+    $helloThing = new Hello();
 
-echo $helloThing->getHello() . PHP_EOL;
+    echo $helloThing->getHello() . PHP_EOL;
 
-echo $helloThing->setHello('world') . PHP_EOL;
+    echo $helloThing->setHello('world') . PHP_EOL;
 
-echo new Hello('foobar') . PHP_EOL;
+    echo new Hello('foobar') . PHP_EOL;
+}
+
+test();
